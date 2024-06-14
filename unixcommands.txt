@@ -1,0 +1,14 @@
+#mysql
+sudo apt update
+sudo apt install mysql-server
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+(change port)
+
+sudo service mysql start
+sudo mysql_secure_installation
+mysql -u root  -p
+
+create database ecommercedb;
+use ecommercedb;
+create table Product(ProductId int primary key, Name varchar(50), Cost int);
+

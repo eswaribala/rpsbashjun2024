@@ -6,6 +6,9 @@ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
 sudo service mysql start
 sudo mysql_secure_installation
+#without password
+sudo mysql
+#with password
 mysql -u root  -p
 
 create database ecommercedb;
